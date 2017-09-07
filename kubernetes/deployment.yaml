@@ -1,0 +1,21 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: whatsit-image-index-bigquery
+  namespace: whatsit
+spec:
+  replicas:
+  template:
+    metadata:
+      labels:
+        role: whatsit-image-index-bigquery
+        name: whatsit-image-index-bigquery
+    spec:
+      containers:
+      - image: gcr.io/whatsit-174908/whatsit-image-index-bigquery:latest
+        name: whatsit-image-index-bigquery
+        env:
+        - name: PROJECTID
+          value: whatsit-174908
+        ports:
+        - containerPort: 6379
