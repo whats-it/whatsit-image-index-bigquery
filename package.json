@@ -10,7 +10,8 @@
   "license": "MIT",
   "dependencies": {
     "@google-cloud/bigquery": "^0.9.6",
+    "jsonfile": "^4.0.0",
     "mongoose": "^4.11.7",
-    "node-redis-pubsub": "^1.0.3"
+    "promise": "^8.0.1"
   }
 }

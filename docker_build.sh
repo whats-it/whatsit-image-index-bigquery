@@ -4,6 +4,7 @@ HOSTNAME="gcr.io"
 TAG=$1
 PROJECT_ID="whatsit-174908"
 IMAGE="whatsit-image-index-bigquery"
+NAMESPACE="whatsit"
 
 docker build -t $IMAGE:$TAG .
 docker tag $IMAGE:$TAG $HOSTNAME/$PROJECT_ID/$IMAGE:$TAG
