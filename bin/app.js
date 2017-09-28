@@ -1,5 +1,5 @@
 'use strict';
 
-var bigquery = require('../lib/bigquery');
+var setup = require('../lib/setup');
 
-bigquery.sql();
+setup.create();
